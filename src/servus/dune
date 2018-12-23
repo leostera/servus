@@ -1,2 +1,3 @@
 (library
-  (name servus))
+  (name servus)
+  (libraries magic-mime bos logs logs.lwt httpaf httpaf-lwt lwt lwt.unix))

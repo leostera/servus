@@ -26,13 +26,13 @@ module SharedOpts = {
     `P("Use `$(mname) $(i,COMMAND) --help' for help on a single command."),
     `Noblank,
     `S(Manpage.s_bugs),
-    `P("Check bug reports at https://github.com/ostera/bsdoc."),
+    `P("Check bug reports at https://github.com/ostera/servus."),
   ];
   let flags = {
     let docs = Manpage.s_common_options;
     let debug = {
       let doc = "Give only debug output.";
-      Arg.(value & flag & info(["debug"], ~docs, ~doc));
+      Arg.(value & flag & info(["d", "debug"], ~docs, ~doc));
     };
 
     let verb = {

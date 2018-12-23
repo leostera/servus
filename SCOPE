@@ -1,0 +1,23 @@
+
+When running `servus -p $PORT --project-root $PATH`
+
+Then I should be able to `curl` any file that lives under $PATH and get its
+contents out.
+
+
+Goals:
+DONE - Start a HTTP Server
+DONE - Respond to Clients
+DONE - Return the file contents to the client
+DONE - Only respond to GETs
+
+---
+
+NOTES
+
+1. We need some promise that never finished to keep the server running
+
+2. We need to talk at a very low level to get the basics up and running
+  (Unix Internet Socket)
+
+3.
