@@ -1,0 +1,19 @@
+opam-version: "2.0"
+name: "servus"
+version: "0.1"
+synopsis: "A static file server"
+maintainer: "Leandro Ostera <leandro@ostera.io>"
+authors: "Leandro Ostera <leandro@ostera.io>"
+license: "MIT"
+homepage: "https//github.com/ostera/servus"
+bug-reports: "https//github.com/ostera/servus/issues"
+depends: [
+  "cmdliner"
+  "fmt"
+  "logs"
+
+  "dune" {build}
+  "reason" {build}
+]
+build: [make "build"]
+install: [make "install"]

@@ -1,0 +1,7 @@
+lib: [
+  "_build/install/default/lib/servus/META" {"META"}
+  "_build/install/default/lib/servus/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/servus" {"servus"}
+]

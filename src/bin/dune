@@ -1,0 +1,4 @@
+(executable
+  (name Main)
+  (public_name servus)
+  (libraries servus cmdliner fmt fmt.tty logs logs.fmt))
